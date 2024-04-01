@@ -1,8 +1,6 @@
-module fa_ha(a,b,c,sum,carry);
-input a,b,c;
+module halff_adder(a,b,sum,carry);
+input a,b;
 output sum,carry;
-
-
-
-
+xor (sum,a,b);
+and(carry,a,b);
 endmodule
