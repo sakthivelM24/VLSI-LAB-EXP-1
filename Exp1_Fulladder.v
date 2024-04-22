@@ -1,6 +1,6 @@
-module halff_adder(a,b,sum,carry);
-input a,b;
-output sum,carry;
-xor (sum,a,b);
-and(carry,a,b);
+module full_adder(sum,cout,a,b,c);
+input a,b,c;
+output sum,cout;
+assign sum = a^b^c;
+assign cout = (a&b)|(b&c)|(a&c);
 endmodule
