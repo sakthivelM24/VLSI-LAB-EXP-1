@@ -1,9 +1,10 @@
-# VLSI-LAB-EXPERIMENTS
-AIM: To simulate and synthesis Logic Gates,Adders and Subtractor using Vivado 2023.2
+# 1.Simulation and Synthesis  of Logic Gates,Adders and Subtractors.
+# AIM: To simulate and synthesis Logic Gates,Adders and Subtractor using Vivado 2023.2
 
-APPARATUS REQUIRED: Vivado 2023.2 
+# APPARATUS REQUIRED: Vivado 2023.2 
 
-PROCEDURE:1. Open Vivado: Launch Xilinx Vivado software on your computer.
+# PROCEDURE:
+1. Open Vivado: Launch Xilinx Vivado software on your computer.
 
 2. Create a New Project: Click on "Create Project" from the welcome page or navigate through "File" > "Project" > "New".
 
@@ -21,7 +22,7 @@ PROCEDURE:1. Open Vivado: Launch Xilinx Vivado software on your computer.
 
 9. View Results: After the simulation completes, you can view waveforms, debug signals, and analyze the behavior of your design.
 
-Logic Diagram :
+# Logic Diagram :
 
 Logic Gates:
 ![image](https://github.com/navaneethans/VLSI-LAB-EXPERIMENTS/assets/6987778/ee17970c-3ac9-4603-881b-88e2825f41a4)
@@ -186,9 +187,6 @@ OUTPUT:
 # 8-BIT RIPPLE CARRY ADDER
 VERILOG CODE:
 ~~
-
-tps://github.com/21004601/VLSI-LAB-EXP-1/edit/main/README.md#vlsi-lab-experiments 11/12
-OUTPUT:
 module rippe_adder(S, Cout, X, Y,Cin);
 input [7:0] X, Y;
 // Two 4-bit inputsinput Cin;
@@ -222,16 +220,4 @@ RESULT:
 THUS THE VERILOG CODE FOR LOGIC GATES,ADDERS,SUBTRACTORS WAS SIMULATEDAND OUTPUT IS VERIFIED SUCCESSFULLY.
 
 
-
-
-
-
-
-
-
-
-
------Place a Waveform Generated from Xilinx ISE
-
-RESULT:
 
