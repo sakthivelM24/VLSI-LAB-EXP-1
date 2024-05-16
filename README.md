@@ -57,7 +57,7 @@ Full Subtractor:
 
 # HALF ADDER
 VERILOG CODE:
-
+~~
 module half_adder(Sum,carry,a,b);
 input a,b;
 output Sum,carry;
@@ -74,7 +74,7 @@ OUTPUT:
 
 # FULL ADDER
 VERILOG CODE:
-
+~~
 module fulladder(sum,cout,a,b,c);
 input a,b,c;
 output sum,cout;
@@ -97,8 +97,6 @@ OUTPUT:
 # FULL SUBTRACTOR
 VERILOG CODE:
 ~~
-
-
 module full_sub(borrow,diff,a,b,c);
 output borrow,diff;
 input a,b,c;
@@ -119,7 +117,6 @@ OUTPUT:
 # HALF SUBTRACTOR
 VERILOG CODE:
 ~~
-
 module half_sub(Diff,Borrow,a,b);
 input a,b;
 output Diff,Borrow;
@@ -128,7 +125,7 @@ not(w1,a);
 xor(Diff,a,b);
 and(Borrow,b,w1);
 endmodule
-
+~~
 OUTPUT:
 ![image](https://github.com/sakthivelM24/VLSI-LAB-EXP-1/assets/165649785/258115c9-d822-4d38-8669-479134a859e7)
 ![image](https://github.com/sakthivelM24/VLSI-LAB-EXP-1/assets/165649785/62e014d2-b7b5-4991-b4c9-2a4ea489c049)
