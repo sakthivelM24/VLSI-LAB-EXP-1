@@ -57,12 +57,14 @@ Full Subtractor:
 
 # HALF ADDER
 VERILOG CODE:
-~~ module half_adder(Sum,carry,a,b);
+```
+module half_adder(Sum,carry,a,b);
 input a,b;
 output Sum,carry;
 assign Sum = a ^ b;
 assign carry = a & b;
-endmodule ~~
+endmodule 
+``
 
 OUTPUT:
 
@@ -72,7 +74,8 @@ OUTPUT:
 
 # FULL ADDER
 VERILOG CODE:
-~~ module fulladder(sum,cout,a,b,c);
+```
+module fulladder(sum,cout,a,b,c);
 input a,b,c;
 output sum,cout;
 wire w1,w2,w3,w4,w5;
@@ -83,8 +86,8 @@ and a2(w3,b,c);
 and a3(w4,a,c);
 or o1(w5,c1,c2);
 or o2(cout,w5,c3);
-endmodule ~~
-
+endmodule 
+```
 OUTPUT:
 
 ![image](https://github.com/sakthivelM24/VLSI-LAB-EXP-1/assets/165649785/0ad6d833-3a2f-400e-a915-b5b652798395)
@@ -92,7 +95,8 @@ OUTPUT:
 
 # FULL SUBTRACTOR
 VERILOG CODE:
-~~ module full_sub(borrow,diff,a,b,c);
+```
+module full_sub(borrow,diff,a,b,c);
 output borrow,diff;
 input a,b,c;
 wire w1,w4,w5,w6;
@@ -102,15 +106,15 @@ and a1(w4,w1,b);
 and a2(w5,w1,c);
 and a3(w6,b,c);
 or o1(borrow,w4,w5,w6);
-endmodule ~~
-
+endmodule 
+```
 OUTPUT:
 ![image](https://github.com/sakthivelM24/VLSI-LAB-EXP-1/assets/165649785/7c8c6f7d-d64a-42c2-916d-1e321ce74495)
 ![image](https://github.com/sakthivelM24/VLSI-LAB-EXP-1/assets/165649785/28d59836-db26-4a31-8248-57ad630937a7)
 
 # HALF SUBTRACTOR
 VERILOG CODE:
-~~
+```
 module half_sub(Diff,Borrow,a,b);
 input a,b;
 output Diff,Borrow;
@@ -119,15 +123,14 @@ not(w1,a);
 xor(Diff,a,b);
 and(Borrow,b,w1);
 endmodule
-~~
+```
 OUTPUT:
 ![image](https://github.com/sakthivelM24/VLSI-LAB-EXP-1/assets/165649785/258115c9-d822-4d38-8669-479134a859e7)
 ![image](https://github.com/sakthivelM24/VLSI-LAB-EXP-1/assets/165649785/62e014d2-b7b5-4991-b4c9-2a4ea489c049)
 
 # LOGIC GATES
 VERILOG CODE:
-~~
-
+```
 module logicgates(a,b,andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate);
 input a,b;
 output andgate,orgate,xorgate,nandgate,norgate,xnorgate,notgate;
@@ -139,15 +142,14 @@ nor(norgate,a,b);
 xnor(xnorgate,a,b);
 not(notgate,a);
 endmodule
-
+```
 OUTPUT:
 ![image](https://github.com/sakthivelM24/VLSI-LAB-EXP-1/assets/165649785/4551aff2-8b4e-45ae-9303-3609713c2095)
 ![image](https://github.com/sakthivelM24/VLSI-LAB-EXP-1/assets/165649785/31292a47-f7d8-4c64-8be4-056edd998c7b)
 
 # 4-BIT RIPPLE CARRY ADDER
 VERILOG CODE:
-~~
-
+```
 module rippe_adder(S, Cout, X, Y,Cin);
 input [3:0] X, Y;
 input Cin;
@@ -169,7 +171,7 @@ and G3(w2, w1, Ci);
 and G4(w3, X, Y);
 or G5(Co, w2, w3);
 endmodule
-
+```
 
 OUTPUT:
 ![image](https://github.com/sakthivelM24/VLSI-LAB-EXP-1/assets/165649785/e88cb55a-75a5-47f0-8790-bbca4facd989)
@@ -177,7 +179,7 @@ OUTPUT:
 
 # 8-BIT RIPPLE CARRY ADDER
 VERILOG CODE:
-~~
+```1
 module rippe_adder(S, Cout, X, Y,Cin);
 input [7:0] X, Y;
 // Two 4-bit inputsinput Cin;
@@ -202,7 +204,7 @@ and G3(w2, w1, Ci);
 and G4(w3, X, Y);
 or G5(Co, w2, w3);
 endmodule
-
+```
 OUTPUT:
 ![image](https://github.com/sakthivelM24/VLSI-LAB-EXP-1/assets/165649785/b5a0f9a6-4c35-451c-b85f-3034ddfdeed8)
 ![image](https://github.com/sakthivelM24/VLSI-LAB-EXP-1/assets/165649785/4e00de5e-edc2-4002-8287-b349ee0dfcd4)
